@@ -1,0 +1,45 @@
+# Build output
+**/target/
+
+# Compiled class files
+*.class
+
+# Logs
+*.log
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# VS Code
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+
+# Maven Wrapper
+.mvn/wrapper/maven-wrapper.jar
+# Keep mvnw and mvnw.cmd
+!mvnw
+!mvnw.cmd
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Others
+wrapper/

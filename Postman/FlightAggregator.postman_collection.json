@@ -1,0 +1,50 @@
+{
+  "info": {
+    "name": "FlightAggregator",
+    "_postman_id": "12345678-abcd-ef00-1234-56789abcdef0",
+    "description": "Postman collection for testing FlightAggregator REST GET endpoints",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Search All Flights",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8082/flights?origin=IST&destination=COV&departureDate=2025-10-20T09:00:00",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8082",
+          "path": ["flights"],
+          "query": [
+            { "key": "origin", "value": "IST" },
+            { "key": "destination", "value": "COV" },
+            { "key": "departureDate", "value": "2025-10-20T09:00:00" }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search Cheapest Flights",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8082/flights/cheapest?origin=IST&destination=COV&departureDate=2025-10-20T09:00:00",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8082",
+          "path": ["flights","cheapest"],
+          "query": [
+            { "key": "origin", "value": "IST" },
+            { "key": "destination", "value": "COV" },
+            { "key": "departureDate", "value": "2025-10-20T09:00:00" }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
